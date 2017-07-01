@@ -1,3 +1,3 @@
-para fazer o update utilizem
+# para fazer o update utilizem
 
- git pull origin master 
+ git pull origin master
