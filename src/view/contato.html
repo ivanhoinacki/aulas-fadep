@@ -1,0 +1,24 @@
+<div class="jumbotron">
+    <h4>{{vm.titulo}}</h4>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr ng-repeat="obj in vm.contatos">
+            <td> {{obj.nome}} </td>
+            <td> {{obj.telefone}} </td>
+          </tr>
+        </tbody>
+    </table>
+    <hr>
+    <input type="text" class="form-control" ng-model="vm.contato.nome"  placeholder="nome">
+    <input type="text" class="form-control" ng-model="vm.contato.telefone" placeholder="telefone">
+    <button type="button" name="add" class="btn btn-primary btn-block" ng-click="vm.adicionarContato(vm.contato)">
+      Adicionar
+    </button>
+    {{vm.contato}}
+</div>
